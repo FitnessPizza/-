@@ -20,8 +20,8 @@ class SkillsTest():
         result = {'Правильно': 0, 'Неправильно': 0}
         for q in table:
             if(table[q] != input(q + ": ")):
-                result['Неправильно'] = result['Неправильно'] + 1
+                result['Неправильно'] += 1
             else:
-                result['Правильно'] = result['Правильно'] + 1
+                result['Правильно'] += 1
         return result
 
